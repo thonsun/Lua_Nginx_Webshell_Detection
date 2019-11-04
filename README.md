@@ -8,7 +8,7 @@ OpenResty® 是一个基于 [Nginx](https://openresty.org/cn/nginx.html) 与 Lua
 
 OpenResty® 通过汇聚各种设计精良的 [Nginx](https://openresty.org/cn/nginx.html) 模块（主要由 OpenResty 团队自主开发），从而将 [Nginx](https://openresty.org/cn/nginx.html) 有效地变成一个强大的通用 Web 应用平台。这样，Web 开发人员和系统工程师可以使用 Lua 脚本语言调动 [Nginx](https://openresty.org/cn/nginx.html) 支持的各种 C 以及 Lua 模块，快速构造出足以胜任 10K 乃至 1000K 以上单机并发连接的高性能 Web 应用系统。
 
-![](../images/lua_nginx_waf.jpg)
+![](./images/lua_nginx_waf.jpg)
 
 此处的思想为：
 
@@ -18,7 +18,7 @@ OpenResty® 通过汇聚各种设计精良的 [Nginx](https://openresty.org/cn/n
 
 系统结构：
 
-![](../images/total.png)
+![](./images/total.png)
 
 通过OpenResty：lua 对Nginx 模块进行拓展，让作为反向代理服务器B在转发流量的时候进行流量的检测，并对webshell等危害服务器A的流量进行 截断。用到的主要为：
 
@@ -329,7 +329,7 @@ sudo systemctl enable openresty
 
 0. website structure: use craw.py
 
-    ![](../images/sites_structure.png)
+    ![](./images/sites_structure.png)
 
 1. get webshell
 
@@ -348,15 +348,15 @@ sudo systemctl enable openresty
 
     * without defence
 
-    ![](../images/raw.png)
+    ![](./images/raw.png)
 
     * with defence
 
-        ![](../images/defence.png)
+        ![](./images/defence.png)
 
     * console to log the detected webshell
 
-        ![](../images/console.png)
+        ![](./images/console.png)
 
 #### 参考
 
